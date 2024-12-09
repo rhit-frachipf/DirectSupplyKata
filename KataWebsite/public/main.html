@@ -1,14 +1,35 @@
 <!doctype html>
 <html lang="en">
-
-
+  
 <head>
   <meta charset="utf-8">
   <script type="text/javascript" src="scripts/scripts.js"></script>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
   <title>Quizzer</title>
 </head>
 
-<body onload="openMain()">
-    <button id = "getQuiz">Get Questions</button>
+<body onload="initializeMain()">
+  <h1>Welcome to Quizzer</h1>
+  <label for="questionCount">How many questions?</label>
+  <input id="questionCount" type="number" min="1" max="50" value="5">
+  <br>
+    <label for="category">Select Category:</label>
+
+    <select id="category">
+      <option value="9">General Knowledge</option>
+      <option value="17">Science</option>
+      <option value="21">Sports</option>
+      <option value="23">History</option>
+      <option value="25">Art</option>
+      <option value="26">Celebrities</option>
+      <option value="27">Animals</option>
+      <option value="28">Vehicles</option>
+      <option value="11">Film</option>
+      <option value="15">Video Games</option>
+      <option value="12">Music</option>
+    </select>
+  <br>
+  <button id="startQuiz">Start Quiz</button>
 </body>
+</html>

@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="en">
 
-
 <head>
   <meta charset="utf-8">
   <script type="text/javascript" src="scripts/scripts.js"></script>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
   <title>Quizzer</title>
 </head>
 
-<body>
-    
+<body onload="loadQuiz()">
+    <h1>Your Quiz</h1>
+    <div id="quizContainer"></div>
+    <button id="submitQuiz" style="display: none;" onclick="submitQuiz()">Submit Quiz</button>
 </body>
+</html>
